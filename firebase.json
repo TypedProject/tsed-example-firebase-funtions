@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "app"
+      }
+    ]
+  },
+  "functions": {
+    "predeploy": "yarn --prefix \"$RESOURCE_DIR\" build"
+  }
+}
